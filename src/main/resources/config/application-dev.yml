@@ -37,9 +37,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/Meetings
-    username: Meetings
-    password:
+    url: jdbc:postgresql://localhost:15434/meetings
+    username: meetings
+    password: meetings
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -60,7 +60,7 @@ spring:
     cache: false
 
 server:
-  port: 8080
+  port: 9096
 
 # ===================================================================
 # JHipster specific properties
@@ -90,7 +90,7 @@ jhipster:
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    base-url: http://127.0.0.1:8080
+    base-url: http://127.0.0.1:9096
   metrics:
     logs: # Reports metrics in the logs
       enabled: false

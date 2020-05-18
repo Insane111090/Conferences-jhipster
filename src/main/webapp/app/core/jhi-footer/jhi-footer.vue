@@ -1,6 +1,6 @@
 <template>
     <div id="footer" class="footer">
-        <p>This is your footer</p>
+        <p>Все права защищены, СПБГПУ, 2020</p>
     </div>
 </template>
 
@@ -9,6 +9,7 @@
 
 <style scoped>
     .footer {
-        text-align: left;
+        text-align: center;
+        margin-top: 20%;
     }
 </style>

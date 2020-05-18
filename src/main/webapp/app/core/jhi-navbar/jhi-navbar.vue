@@ -2,27 +2,27 @@
     <b-navbar toggleable="md" type="dark" class="bg-primary">
         <b-navbar-brand class="logo" b-link to="/">
             <span class="logo-img"></span>
-            <span class="navbar-title">Meetings</span> <span class="navbar-version">{{version}}</span>
-        </b-navbar-brand>      
-        <b-navbar-toggle 
-        right 
-        class="jh-navbar-toggler d-lg-none" 
-        href="javascript:void(0);"  
-        data-toggle="collapse" 
-        target="header-tabs" 
-        aria-expanded="false" 
+            <span class="navbar-title">Конференции</span> <!--<span class="navbar-version">{{version}}</span>-->
+        </b-navbar-brand>
+        <b-navbar-toggle
+        right
+        class="jh-navbar-toggler d-lg-none"
+        href="javascript:void(0);"
+        data-toggle="collapse"
+        target="header-tabs"
+        aria-expanded="false"
         aria-label="Toggle navigation">
             <font-awesome-icon icon="bars" />
         </b-navbar-toggle>
-           
+
         <b-collapse is-nav id="header-tabs">
             <b-navbar-nav class="ml-auto">
-                <b-nav-item to="/" exact>
+                <!--<b-nav-item to="/" exact>
                     <span>
                         <font-awesome-icon icon="home" />
                         <span>Home</span>
                     </span>
-                </b-nav-item>
+                </b-nav-item>-->
                 <b-nav-item-dropdown
                     right
                     id="entity-menu"
@@ -43,13 +43,13 @@
                     class="pointer">
                     <span slot="button-content" class="navbar-dropdown-menu">
                         <font-awesome-icon icon="cogs" />
-                        <span>Administration</span>
+                        <span>Администрирование</span>
                     </span>
                     <b-dropdown-item to="/admin/user-management" active-class="active">
                         <font-awesome-icon icon="user" />
-                        <span>User management</span>
+                        <span>Управление пользователями</span>
                     </b-dropdown-item>
-                    <b-dropdown-item  to="/admin/jhi-metrics" active-class="active">
+                   <!-- <b-dropdown-item  to="/admin/jhi-metrics" active-class="active">
                         <font-awesome-icon icon="tachometer-alt" />
                         <span>Metrics</span>
                     </b-dropdown-item>
@@ -72,7 +72,7 @@
                     <b-dropdown-item v-if="swaggerEnabled"  to="/admin/docs" active-class="active">
                         <font-awesome-icon icon="book" />
                         <span>API</span>
-                    </b-dropdown-item>
+                    </b-dropdown-item>-->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown
                     right
@@ -84,28 +84,28 @@
                     <span slot="button-content" class="navbar-dropdown-menu">
                         <font-awesome-icon icon="user" />
                         <span>
-                            Account
+                            Пользователь
                         </span>
                     </span>
                     <b-dropdown-item to="/account/settings" tag="b-dropdown-item" v-if="authenticated" active-class="active">
                         <font-awesome-icon icon="wrench" />
-                        <span>Settings</span>
+                        <span>Настройки</span>
                     </b-dropdown-item>
                     <b-dropdown-item to="/account/password" tag="b-dropdown-item" v-if="authenticated" active-class="active">
                         <font-awesome-icon icon="lock" />
-                        <span>Password</span>
+                        <span>Смена пароля</span>
                     </b-dropdown-item>
                     <b-dropdown-item v-if="authenticated"  v-on:click="logout()" id="logout" active-class="active">
                         <font-awesome-icon icon="sign-out-alt" />
-                        <span>Sign out</span>
+                        <span>Выход</span>
                     </b-dropdown-item>
                     <b-dropdown-item v-if="!authenticated"  v-on:click="openLogin()" id="login" active-class="active">
                         <font-awesome-icon icon="sign-in-alt" />
-                        <span>Sign in</span>
+                        <span>Вход</span>
                     </b-dropdown-item>
                     <b-dropdown-item to="/register" tag="b-dropdown-item" id="register" v-if="!authenticated" active-class="active">
                         <font-awesome-icon icon="user-plus" />
-                        <span>Register</span>
+                        <span>Регистрация</span>
                     </b-dropdown-item>
                 </b-nav-item-dropdown>
             </b-navbar-nav>
@@ -159,7 +159,7 @@
 
 .logo-img {
   height: 100%;
-  background: url("../../../content/images/logo-jhipster.png") no-repeat center
+  background: url("../../../content/images/conf_image_navbar.png") no-repeat center
     center;
   background-size: contain;
   width: 100%;
