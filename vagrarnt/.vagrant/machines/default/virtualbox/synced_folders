@@ -1,0 +1,1 @@
+{"virtualbox":{"bootstrap":{"create":true,"owner":null,"group":null,"nfs":false,"transient":false,"extra":null,"id":"bootstrap","guestpath":"/mnt/bootstrap","hostpath":"/Users/andreigavrilov/Work/Projects/Diploma/Meetings/vagrarnt","disabled":false,"__vagrantfile":true}}}
