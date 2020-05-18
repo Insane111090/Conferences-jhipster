@@ -1,0 +1,11 @@
+version: '2'
+services:
+  meetings-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/Meetings/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Meetings
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

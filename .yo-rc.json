@@ -1,0 +1,54 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.meetings"
+    },
+    "jhipsterVersion": "6.9.0",
+    "applicationType": "monolith",
+    "baseName": "Meetings",
+    "packageName": "com.meetings",
+    "packageFolder": "com/meetings",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NmM1OTYwZTZiODNlOTdlY2E2YWE5NDBiMjRlZTE3NWYzYmY5MjI0NDMwNzdmZDU3YzBlNTBmZDM4ODM1YmE3NzViNTU1YjhhMjYwY2ZjNGI0OWE5YTVhZmQ4MjhjMGMwMzQ2OWFjZTc0ZGQyNTJkNmRhNTk3MGQ4NzNlYzFlZmM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "vue",
+    "clientTheme": "lumen",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1589822190529,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.8.0"
+      },
+      {
+        "name": "generator-jhipster-vuejs2",
+        "version": "1.1.12"
+      }
+    ],
+    "enableTranslation": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.8.0"
+      }
+    ]
+  }
+}
